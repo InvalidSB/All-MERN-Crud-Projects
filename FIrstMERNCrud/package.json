@@ -1,0 +1,31 @@
+{
+  "name": "merncrud",
+  "version": "1.0.0",
+  "description": "I'm just trying to build a mern application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "dev": "concurrently -n 'server,client' -c 'blue,green' \"nodemon app.js\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InvalidSB/MernCrud.git"
+  },
+  "author": "Sujan Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InvalidSB/MernCrud/issues"
+  },
+  "homepage": "https://github.com/InvalidSB/MernCrud#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}
